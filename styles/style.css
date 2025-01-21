@@ -53,7 +53,7 @@ a{
   padding: 120px;
 }
 .hero-container{
-  
+  justify-content: space-between;
 }
 .hero-description{
   width: 550px;
@@ -83,6 +83,11 @@ a{
  gap: 10px;
 }
 /* curriculam section */
+.curriculum-section{
+  background-image:url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
 .Curriculum-vitae {
   gap: 20px;
   padding: 20px;
@@ -90,27 +95,154 @@ a{
 .curriculum-heading{
   text-align: center;
   padding-top: 30px;
+  font-size: 2.85rem;
+  font-weight: 700;
 }
 .Curriculum{
   border-radius: 12px;
-  background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFf;
-  border: 0.943px solid #DEF5FF;
-  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
   padding: 30px;
   justify-content: center;
   align-items: center;
   justify-items: center;
+  width: 365px;
+  height: 375px;
+
+}
+.kinder{
+  background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFf;
+  border: 0.943px solid #DEF5FF;
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.elementary{
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+  background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+  border: 0.943px solid #FFF4DC;
+}
+.middle{
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+  background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+  border: 0.943px solid #F2E8FF;
+}
+.kinder-blue{
+  color: #64C8FF;
+  font-weight: 700;
+}
+.elementary-orange{
+ color:  #F0AA00;
+ font-weight: 700;
+}
+.middle-parpal{
+  color: #8700FF;
+  font-weight: 700;
+}
+.heading-4{
+  color: #202020;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+.curriculum-description{
+  color: #808080;
+  font-size: 1rem;
+  line-height: 30px;
+}
+.aro-section{
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+  gap: 10px;
+}
+.aro{
+  background-color: #FEA301;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+  color: white;
+}
+/* start story section */
+.stories{
+  text-align: center;
+  justify-content: center;
+  font-size: 3.57rem;
+  font-weight: 700;
+}
+.stories-main-container{
+  justify-content: space-between;
+}
+.stories-container{
+  display: grid;
+  width: 590px;
+  height: 620px;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+}
+.story-1{
+  width: 540px;
+  height: 650px;
+  position: relative;
+  border-radius: 16px;
+  background-color: darkgrey;
+  margin-top: 25px;
+}
+.img-1 ,.story-imgs{
+  border-radius:16px 16px 0 0px;
+}
+.story-1-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 30px;
+}
+.story-1-description{
+  padding: 0px 30px;
+  color: rgba(102, 102, 102, 1);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.btn-story{
+  border-radius: 47.934px;
+  padding: 14px 18px 15px 19px;
+  border: none;
+  margin-top:-100px;
+  margin-left: 20px;
+}
+.story{
+  background-color: darkgrey;
+  border-radius: 16px;
+}
+.story-second-heading{
+  padding: 10px 30px;
+}
+/* start footer container */
+footer{
+  background-color: rgba(1, 172, 253, 1);
+  color: white;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+}
+.kids-education{
+  width: 400px;
 }
 /* for small device */
 @media screen and (max-width:576px) {
   .nav-bar{
     margin: 0px;
     padding:0 20px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .logo-title-container,
   .nav-links,
-  .contact-btn{
+  .contact-btn,
+  .story-1,
+  .aro-section{
     display: none;
   }
   .hidden-bar{
@@ -119,13 +251,50 @@ a{
   .hero-container{
     flex-direction: column-reverse;
   }
-  .hero-description{
+  /* .hero-kids-img{
+    padding: 10px;
+  } */
+  .vision-heading{
+    text-align: center;
+    font-size:2.5rem ;
+  }
+  .stories{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   font-size: 2rem;
+  }
+  .vision-description{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .hero-description,.Curriculum-vitae{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
   }
   .hero-description{
     width: 300px;
+  }
+  .curriculum-heading{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .curriculum-section{
+    width: 100%;
+  }
+  .Curriculum{
+   padding: 10px;
+  }
+  .stories-container{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 5px;
   }
 }
