@@ -1,5 +1,9 @@
 body{
   font-family: Quicksand;
+
+}
+html{
+  scroll-behavior: smooth;
 }
 .flexx{
   display: flex;
@@ -49,9 +53,7 @@ a{
   display: none;
 }
 /* start main section */
-.main{
-  padding: 120px;
-}
+
 .hero-container{
   justify-content: space-between;
 }
@@ -83,10 +85,14 @@ a{
  gap: 10px;
 }
 /* curriculam section */
+.section{
+ padding:30px 100px;
+}
 .curriculum-section{
   background-image:url(../assets/bg.png);
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center;
+
 }
 .Curriculum-vitae {
   gap: 20px;
@@ -166,6 +172,10 @@ a{
   color: white;
 }
 /* start story section */
+.story-section{
+  background: url(../assets/bg.png),linear-gradient(white 0%,rgba(254, 163, 1, 0.3));
+  background-position: center;
+}
 .stories{
   text-align: center;
   justify-content: center;
@@ -174,20 +184,21 @@ a{
 }
 .stories-main-container{
   justify-content: space-between;
+  padding-bottom: 70px;
 }
 .stories-container{
   display: grid;
   width: 590px;
   height: 620px;
   grid-template-columns: repeat(2,1fr);
-  gap:10px;
+  gap:15px;
 }
 .story-1{
   width: 540px;
   height: 650px;
   position: relative;
   border-radius: 16px;
-  background-color: darkgrey;
+  background-color: white;
   margin-top: 25px;
 }
 .img-1 ,.story-imgs{
@@ -212,7 +223,7 @@ a{
   margin-left: 20px;
 }
 .story{
-  background-color: darkgrey;
+  background-color: white;
   border-radius: 16px;
 }
 .story-second-heading{
@@ -226,13 +237,27 @@ footer{
 
 .footer-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 50px 10px;
 }
 .kids-education{
   width: 400px;
 }
+.about-school{
+text-decoration: none;
+list-style: none;
+}
+.about-div{
+text-align: center;
+}
 /* for small device */
 @media screen and (max-width:576px) {
+  .section{
+    margin:0px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+  }
   .nav-bar{
     margin: 0px;
     padding:0 20px;
@@ -286,15 +311,29 @@ footer{
     justify-content: center;
     align-content: center;
   }
-  .curriculum-section{
-    width: 100%;
-  }
   .Curriculum{
    padding: 10px;
   }
   .stories-container{
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    width: 420px;
+    height: auto;
+    grid-template-columns: repeat(2,1fr);
     justify-content: center;
-    gap: 5px;
+    gap:10px;
+    margin: 10px;
   }
+.story{
+  width: 190px;
+}
+.story-imgs{
+  width: 100%;
+}
+.btn-story{
+  border-radius: 45px;
+  padding: 12px 16px 13px 17px;
+  border: none;
+  margin-top:-100px;
+  margin-left: 20px;
+}
 }
