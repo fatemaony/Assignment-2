@@ -90,6 +90,9 @@ a{
  padding: 10px 30px;
  gap: 10px;
 }
+.enroll-now:hover{
+  background-color: #808080;
+}
 /* curriculam section */
 .section{
  padding:30px 100px;
@@ -176,6 +179,9 @@ a{
   justify-items: center;
   align-content: center;
   color: white;
+}
+.aro:hover{
+  background-color: orangered;
 }
 /* start story section */
 .story-section{
@@ -389,13 +395,13 @@ text-align: left;
   width: 50%;
 }
 .footer-container{ 
-  padding-left: 10px;
+  padding-left: 20px;
   flex-direction: column;
   justify-content: start;
   align-items:start;
 }
 .kids-education-container{
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
 }
 .hero-img{
   display: flex;
