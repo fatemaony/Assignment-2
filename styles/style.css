@@ -302,8 +302,8 @@ text-align: left;
   }
   .nav-bar{
     margin: 0px;
-    /* padding:0 20px; */
-    padding-bottom: 20px;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
     justify-content: space-between;
   }
   .logo-title-container,
@@ -315,6 +315,9 @@ text-align: left;
   }
   .hidden-bar{
     display: block;
+  }
+  .hr-color{
+    border: 0.5px solid orange;
   }
   .hero-container{
     flex-direction: column-reverse;
