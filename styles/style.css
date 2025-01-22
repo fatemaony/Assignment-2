@@ -240,6 +240,9 @@ a{
  background-color: rgba(60, 216, 232, 1) ;
  color: white;
 }
+.btn-color-light-blue:hover{
+  background-color: #083953;
+}
 .btn-color-blue:hover{
   background-color: blue;
 }
@@ -278,12 +281,8 @@ footer{
   width: 200px;
 justify-content: start;
 }
-.about-school{
-text-decoration: none;
-list-style: none;
-}
 .about-div{
-text-align: center;
+text-align: left;
 }
 .kids-edu{
   font-size: 2rem;
