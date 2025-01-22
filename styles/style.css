@@ -6,6 +6,11 @@ padding: 0;
 html{
   scroll-behavior: smooth;
 }
+.marquee{
+  background-color: #01ACFD;
+  color: white;
+  padding: 20px;
+}
 .flexx{
   display: flex;
 align-items: center;
@@ -220,8 +225,8 @@ a{
   border-radius: 47.934px;
   padding: 14px 18px 15px 19px;
   border: none;
-  margin-top:-100px;
-  margin-left: 20px;
+  transform: translateY(-50%) translateX(20%);
+
 }
 .btn-color-green{
   background-color: rgba(149, 178, 38, 1);
@@ -234,6 +239,12 @@ a{
 .btn-color-light-blue{
  background-color: rgba(60, 216, 232, 1) ;
  color: white;
+}
+.btn-color-blue:hover{
+  background-color: blue;
+}
+.btn-color-green:hover{
+  background-color: green;
 }
 .story{
   background-color: white;
@@ -274,6 +285,14 @@ list-style: none;
 .about-div{
 text-align: center;
 }
+.kids-edu{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.about-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 /* for small device */
 @media screen and (max-width:576px) {
   .section{
@@ -300,6 +319,9 @@ text-align: center;
   }
   .hero-container{
     flex-direction: column-reverse;
+  }
+  .curriculum-description{
+    padding: 10px;
   }
   /* .hero-kids-img{
     padding: 10px;
@@ -358,8 +380,7 @@ text-align: center;
   border-radius: 45px;
   padding: 12px 16px 13px 17px;
   border: none;
-  margin-top:-100px;
-  margin-left: 20px;
+  transform: translateX(10%) translateY(-50%);
 }
 .education-logo{
   justify-content: left;
@@ -374,5 +395,15 @@ text-align: center;
 }
 .kids-education-container{
   width: calc(100% - 10px);
+}
+.hero-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+.hero-kids-img{
+  width: 80%;
 }
 }
