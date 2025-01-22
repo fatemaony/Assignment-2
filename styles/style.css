@@ -369,7 +369,7 @@ text-align: left;
     gap:10px;
   }
 .story{
-  width: 190px;
+  width: 100%;
 }
 .story-imgs{
   width: 100%;
@@ -378,7 +378,7 @@ text-align: left;
   border-radius: 45px;
   padding: 12px 16px 13px 17px;
   border: none;
-  transform: translateX(10%) translateY(-50%);
+  transform: translateX(5%) translateY(-50%);
 }
 .education-logo{
   justify-content: left;
