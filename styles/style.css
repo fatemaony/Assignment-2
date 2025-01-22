@@ -367,7 +367,6 @@ text-align: left;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     gap:10px;
-    margin: 10px;
   }
 .story{
   width: 190px;
