@@ -1,6 +1,7 @@
 body{
   font-family: Quicksand;
-
+margin: 0;
+padding: 0;
 }
 html{
   scroll-behavior: smooth;
@@ -240,8 +241,13 @@ footer{
   justify-content: space-evenly;
   padding: 50px 10px;
 }
-.kids-education{
-  width: 400px;
+.kids-education-container{
+   width: 400px;
+   gap: 5px;
+}
+.education-logo{
+  width: 200px;
+justify-content: start;
 }
 .about-school{
 text-decoration: none;
@@ -249,6 +255,9 @@ list-style: none;
 }
 .about-div{
 text-align: center;
+}
+.education-logo-img{
+  background-color: white;
 }
 /* for small device */
 @media screen and (max-width:576px) {
@@ -335,5 +344,17 @@ text-align: center;
   border: none;
   margin-top:-100px;
   margin-left: 20px;
+}
+.education-logo{
+  flex-direction: column;
+  width: 100%;
+}
+.footer-container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kids-education-container{
+  width: 100%;
 }
 }
